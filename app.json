@@ -1,0 +1,12 @@
+{
+  "name": "rate5",
+  "displayName": "rate5",
+  "expo": {
+    "name": "rate5",
+    "slug": "rate5",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
