@@ -42,6 +42,7 @@ const styles = StyleSheet.create({
     splashLogo: {
         width: wp("35%"),
         height: hp("35%"),
+        resizeMode: 'contain'
     },
 
 });

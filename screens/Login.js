@@ -121,7 +121,8 @@ const styles = StyleSheet.create({
         height: hp("20%"),
         justifyContent: 'center',
         alignSelf: 'center',
-        marginTop: hp("10%")
+        marginTop: hp("10%"),
+        resizeMode: 'contain'
     }
 
 });
