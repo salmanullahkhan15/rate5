@@ -11,7 +11,7 @@ import Login from './screens/Login'
 import SplashScreen from './screens/SplashScreen'
 import RestaurantDetail from './screens/RestaurantDetail'
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import { Provider as PaperProvider, DefaultTheme } from 'react-native-paper';
+import { Provider as PaperProvider, DefaultTheme, ActivityIndicator } from 'react-native-paper';
 
 
 const Tab = createBottomTabNavigator();
@@ -84,6 +84,7 @@ function AppTabs() {
       <Tab.Screen name="Home" component={HomeStackScreen} />
       <Tab.Screen name="Post" component={PostStackScreen} />
       <Tab.Screen name="Profile" component={ProfileStackScreen} />
+
 
 
     </Tab.Navigator>

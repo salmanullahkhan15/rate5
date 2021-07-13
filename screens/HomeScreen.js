@@ -22,7 +22,7 @@ function HomeScreen({ navigation }) {
             return hero.Name.toLowerCase() == query.toLowerCase();
         });
 
-        console.log(arr)
+        // console.log(arr)
 
         setRestaurantList(arr)
 
@@ -60,18 +60,25 @@ function HomeScreen({ navigation }) {
     return (
 
         <ScrollView keyboardShouldPersistTaps="handled">
+
             {loading ?
                 <ActivityIndicator animating={true} size="large" style={styles.indicator} />
                 : null
             }
 
+
+
             <View style={styles.mainContainer}>
+
 
                 <Searchbar
                     placeholder="Search"
                     onChangeText={onChangeSearch}
                     value={searchQuery}
                 />
+
+
+
                 <View style={styles.cardView}>
 
                     {restaurantList.map(
@@ -176,11 +183,11 @@ const styles = StyleSheet.create({
     },
     indicator: {
         position: 'absolute',
-        marginTop: hp('50%'),
+        marginTop: hp('40%'),
         marginLeft: wp('45%'),
-        zIndex: 10000,
         backgroundColor: '#FFFFFF',
-        borderRadius: 100
+        borderRadius: 100,
+        zIndex: 100000
     },
     fabBtn: {
         position: 'absolute',

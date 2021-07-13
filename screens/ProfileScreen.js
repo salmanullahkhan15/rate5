@@ -127,6 +127,10 @@ function ProfileScreen({ route, navigation }) {
 
     }
 
+    const gotoRestaurantPage = (item) => {
+        navigation.navigate('Restaurant Detail', { restaurantID: item.Id })
+    }
+
     return (
         <ScrollView style={styles.container} >
 
@@ -178,7 +182,7 @@ function ProfileScreen({ route, navigation }) {
 
                 {postData.map(
                     item => (
-                        <Card style={styles.cardItem}>
+                        <Card style={styles.cardItem} onPress={() => { gotoRestaurantPage(item) }}>
                             <Card.Content>
                                 <Text style={styles.resTitle}>{item.Name}</Text>
                                 <Text style={styles.resDes}>{item.Location}</Text>

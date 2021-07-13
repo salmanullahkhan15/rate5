@@ -29,9 +29,6 @@ function Register({ navigation }) {
 
                 apiFunctions.POST_REQUEST(BASE_URL + API_URL.SIGN_UP, data).then(res => {
 
-                    // alert(res)
-
-                    // alert(JSON.stringify(JSON.parse(res.data)))
                     if (res.data == undefined || res.data == null) {
                         alert("Please enter correct username and password")
                         return false
