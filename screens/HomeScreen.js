@@ -70,14 +70,11 @@ function HomeScreen({ navigation }) {
 
             <View style={styles.mainContainer}>
 
-
                 <Searchbar
                     placeholder="Search"
                     onChangeText={onChangeSearch}
                     value={searchQuery}
                 />
-
-
 
                 <View style={styles.cardView}>
 
